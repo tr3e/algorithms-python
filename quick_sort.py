@@ -19,11 +19,8 @@ def quick_partition(array, i, j):
 	return i
 
 
-def quick_sort(array, s, t):
-	start = time.time()
+def quick_sort(array, s, t):	
 	if(s < t):
 		i = quick_partition(array, s, t)
 		quick_sort(array, s, i-1)
 		quick_sort(array, i+1, t)
-	end = time.time()
-	print end - start
